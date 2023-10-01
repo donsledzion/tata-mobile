@@ -930,8 +930,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3618197510217768773}
   - component: {fileID: 2963716691153982277}
-  - component: {fileID: 224796234850518183}
-  - component: {fileID: 2697440439721343085}
+  - component: {fileID: 6090322924293817905}
+  - component: {fileID: 892208775464418118}
   m_Layer: 5
   m_Name: PictureMask
   m_TagString: Untagged
@@ -968,7 +968,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4627988049145931072}
   m_CullTransparentMesh: 1
---- !u!114 &224796234850518183
+--- !u!114 &6090322924293817905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2697440439721343085
+--- !u!114 &892208775464418118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
