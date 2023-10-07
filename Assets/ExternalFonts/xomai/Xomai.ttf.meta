@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b9474173b1d440447befe0c46fba0472
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Xomai
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e15f6751cd6f0cb4987fa1c7984d530a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

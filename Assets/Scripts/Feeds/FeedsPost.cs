@@ -50,14 +50,11 @@ public class FeedsPost : MonoBehaviour
         Texture2D texture = null;
         if (File.Exists(Path.Combine(Application.persistentDataPath, imageURL)))
         {
-            Debug.Log("<color=green>File " + imageURL + " exists in storage</color>");
             texture = GetPictureFromStorage(imageURL);
             yield return new WaitForEndOfFrame();
         }
         else
         {
-
-            Debug.Log("<color=red>File " + imageURL + " not found in storage</color>");
             UnityWebRequest www = UnityWebRequestTexture.GetTexture(Consts.BaseURL + imageURL);
             yield return www.SendWebRequest();
             loadingImage?.SetActive(true);
@@ -76,7 +73,6 @@ public class FeedsPost : MonoBehaviour
         }
         float pictureRatio = (float)texture.width / (float)texture.height;
         float fittedHeight = texture.width / pictureRatio;
-        Debug.Log("Texture width: " + texture.width + " height: " + texture.height + " | ratio: " + pictureRatio + " | fitted height: " + fittedHeight);
         pictureRect.sizeDelta = new Vector2(pictureRect.sizeDelta.x, fittedHeight * (pictureRect.sizeDelta.x / texture.width));
         targetImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0, 0));
         

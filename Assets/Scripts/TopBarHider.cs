@@ -30,8 +30,6 @@ public class TopBarHider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             pointerPositionY = eventData.position.y;
             deltaY = pointerPositionY- pointerDownPositionY;
-
-            Debug.Log("Delta: " + deltaY.ToString("0.0"));
             
             topBar.position = new Vector3(
                 topBar.position.x,
@@ -47,7 +45,6 @@ public class TopBarHider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         isPointerDown = false;
         StartCoroutine(CompleteBarSlide());
-        //
     }
 
     IEnumerator Start()
@@ -56,7 +53,6 @@ public class TopBarHider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         onClickedPositionY = topBar.position.y;
         minBarY = topBar.position.y;
         maxBarY = minBarY + topBar.sizeDelta.y;
-        Debug.Log("<color=yellow>StartBarY: " + onClickedPositionY + "</color>");
     }
 
     IEnumerator CompleteBarSlide()

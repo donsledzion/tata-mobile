@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ExitButton : MonoBehaviour
 {
+    [SerializeField] UnityEvent onExitClicked;
     private int click = 0;
     void Update()
     {
@@ -14,6 +16,10 @@ public class ExitButton : MonoBehaviour
             if (click > 1)
             {
                 Application.Quit();
+            }
+            else
+            {
+                onExitClicked?.Invoke();
             }
         }
     }
