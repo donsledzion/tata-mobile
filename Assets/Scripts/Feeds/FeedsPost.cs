@@ -4,9 +4,7 @@ using UnityEngine.UI;
 using Kidbook.Models;
 using UnityEngine.Networking;
 using System.Collections;
-using System;
 using System.IO;
-using Unity.VisualScripting;
 
 public class FeedsPost : MonoBehaviour
 {

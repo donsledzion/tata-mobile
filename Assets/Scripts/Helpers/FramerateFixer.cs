@@ -4,6 +4,6 @@ public class FramerateFixer : MonoBehaviour
 {
     private void Awake()
     {
-        Application.targetFrameRate = 1000;
+        Application.targetFrameRate = 120;
     }
 }
